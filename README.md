@@ -10,23 +10,17 @@ Clone into ~/dotfiles/
 
 Then add symlinks in your ~/ directory
 
-Symlink vim:
-  ln -nfs ~/dotfiles/ .vim
+Symlinks
+vim:           ln -nfs ~/dotfiles/ .vim
 
-Symlink .vimrc:
-  ln -nfs ~/dotfiles/vimrc .vimrc
+.vimrc:        ln -nfs ~/dotfiles/vimrc .vimrc
 
-Symlink .gvimrc:
-  ln -nfs ~/dotfiles/gvimrc .gvimrc
+.gvimrc:       ln -nfs ~/dotfiles/gvimrc .gvimrc
 
-Symlink .bash_aliases
-  ln -nfs ~/dotfiles/bash_aliases .bash_aliases
+.bash_aliases: ln -nfs ~/dotfiles/bash_aliases .bash_aliases
 
-Symlink .gitconfig
-  ln -nfs ~/dotfiles/gitconfig .gitconfig
+.gitconfig:    ln -nfs ~/dotfiles/gitconfig .gitconfig
 
-Symlink .gitignore
-  ln -nfs ~/dotfiles/gitignore .gitignore
+.gitignore:    ln -nfs ~/dotfiles/gitignore .gitignore
 
-Symlink .gemrc
-  ln -nfs ~/dotfiles/gemrc .gemrc
+.gemrc:        ln -nfs ~/dotfiles/gemrc .gemrc
