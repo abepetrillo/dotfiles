@@ -6,7 +6,7 @@
   safecrlt = true
 	editor = vim -f
 	editor = /usr/bin/vim
-	excludesfile = ~/dotfiles/gitignore
+	excludesfile = /opt/boxen/config/git/gitignore
 [alias]
   co = checkout
   ci = commit
@@ -36,3 +36,9 @@
   untracked = cyan
 [push]
   default = current
+
+[hub]
+protocol = https
+
+[credential]
+helper = /opt/boxen/bin/boxen-git-credential
