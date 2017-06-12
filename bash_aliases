@@ -23,7 +23,7 @@ alias gb="git branch "
 alias gc="git commit "
 alias gd="git diff "
 alias go="git checkout "
-alias gbs="git for-each-ref --sort=-committerdate refs/heads/"
+alias gbs="git for-each-ref --sort=-committerdate refs/heads/ | less"
 
 # Bundler
 alias b="rbenv exec bundle"
