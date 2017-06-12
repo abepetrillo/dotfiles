@@ -7,9 +7,6 @@ alias ..="cd .."
 alias ...="cd ../.."
 alias dev="cd ~/development"
 
-# mkdir and cd into it
-function take() { mkdir $1; cd $1; }
-alias tk="take"
 
 # bashrc & vimrc
 alias pr="vim ~/.bash_aliases"
@@ -24,6 +21,7 @@ alias gc="git commit "
 alias gd="git diff "
 alias go="git checkout "
 alias gbs="git for-each-ref --sort=-committerdate refs/heads/ | less"
+alias gfo="git fetch origin"
 
 # Bundler
 alias b="rbenv exec bundle"
@@ -35,9 +33,6 @@ alias sc='script/console'
 alias rr='rake routes'
 alias migrate='rake db:migrate'
 alias tlf='tail -f'
-
-# Evergreen
-alias evergreen="rbenv exec be rails s -p 4000"
 
 # Bash prompt
 
