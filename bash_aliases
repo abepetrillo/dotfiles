@@ -55,7 +55,7 @@ NO_COLOUR="\[\033[0m\]"
 PS1="$RED\$(date +%H:%M) \w$YELLOW\$(parse_git_branch)\$ $NO_COLOUR"
 
 # Edit bash_aliases
-alias pr="vim ~/.bash_aliases"
+alias ba="vim ~/.bash_aliases"
 
 # Edit vimconfig
 alias vr="vim ~/.vimrc"
