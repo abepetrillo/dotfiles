@@ -35,6 +35,7 @@ alias tlf='tail -f'
 # Directory Navigation
 
 alias batnut='cd ~/src/batnut'
+alias gspringclean='git branch --merged | egrep -v "(^\*|master|dev)" | xargs git branch -d'
 
 # Bash prompt
 
