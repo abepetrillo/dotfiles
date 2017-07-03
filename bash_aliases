@@ -4,8 +4,6 @@
 alias ll="ls -l"
 alias lla="ls -la"
 alias ..="cd .."
-alias ...="cd ../.."
-alias dev="cd ~/development"
 
 # mkdir and cd into it
 function take() { mkdir $1; cd $1; }
@@ -26,8 +24,8 @@ alias go="git checkout "
 alias gbs="git for-each-ref --sort=-committerdate refs/heads/"
 
 # Bundler
-alias b="rbenv exec bundle"
-alias be="rbenv exec bundle exec "
+alias b="bundle"
+alias be="bundle exec "
 
 # Rails
 alias ss='script/server'
@@ -36,8 +34,9 @@ alias rr='rake routes'
 alias migrate='rake db:migrate'
 alias tlf='tail -f'
 
-# Evergreen
-alias evergreen="rbenv exec be rails s -p 4000"
+# Directory Navigation
+
+alias batnut='cd ~/src/batnut'
 
 # Bash prompt
 
@@ -58,7 +57,6 @@ GREEN="\[\033[0;32m\]"
 NO_COLOUR="\[\033[0m\]"
 
 PS1="$RED\$(date +%H:%M) \w$YELLOW\$(parse_git_branch)\$ $NO_COLOUR"
-
 # Edit bash_aliases
 alias pr="vim ~/.bash_aliases"
 
@@ -73,3 +71,7 @@ alias dfind="find . -name"
 
 # Open folder
 alias o="nautilus"
+
+# Clone production
+alias backup_url="heroku pg:backups public-url"
+alias restore_from_url="echo heroku pg:backups restore URL  DATABASE_URL"
