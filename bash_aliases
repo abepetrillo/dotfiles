@@ -5,9 +5,6 @@ alias ll="ls -l"
 alias lla="ls -la"
 alias ..="cd .."
 
-# mkdir and cd into it
-function take() { mkdir $1; cd $1; }
-alias tk="take"
 
 # bashrc & vimrc
 alias pr="vim ~/.bash_aliases"
@@ -21,7 +18,8 @@ alias gb="git branch "
 alias gc="git commit "
 alias gd="git diff "
 alias go="git checkout "
-alias gbs="git for-each-ref --sort=-committerdate refs/heads/"
+alias gbs="git for-each-ref --sort=-committerdate refs/heads/ | less"
+alias gfo="git fetch origin"
 
 # Bundler
 alias b="bundle"
@@ -58,7 +56,7 @@ NO_COLOUR="\[\033[0m\]"
 
 PS1="$RED\$(date +%H:%M) \w$YELLOW\$(parse_git_branch)\$ $NO_COLOUR"
 # Edit bash_aliases
-alias pr="vim ~/.bash_aliases"
+alias ba="vim ~/.bash_aliases"
 
 # Edit vimconfig
 alias vr="vim ~/.vimrc"
