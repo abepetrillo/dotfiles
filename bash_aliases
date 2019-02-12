@@ -21,6 +21,11 @@ alias go="git checkout "
 alias gbs="git for-each-ref --sort=-committerdate refs/heads/ | less"
 alias gfo="git fetch origin"
 
+#Docker
+
+alias dc="docker-compose"
+alias dcrc="docker-compose run web bundle exec rails console"
+
 # Bundler
 alias b="bundle"
 alias be="bundle exec "
