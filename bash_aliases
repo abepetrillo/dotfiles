@@ -24,6 +24,8 @@ alias gfo="git fetch origin"
 #Docker
 
 alias dc="docker-compose"
+alias dcr="docker-compose run"
+alias dcrk="docker-compose run web bundle exec rake"
 alias dcrc="docker-compose run web bundle exec rails console"
 
 # Bundler
