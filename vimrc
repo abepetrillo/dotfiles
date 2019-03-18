@@ -123,8 +123,5 @@ end
 
 nnoremap <silent> <C-n> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
 
-"Platform .ui files
-au BufRead,BufNewFile *.ui set filetype=ruby
-
 "CtrlP enabled (predictive file opening)
 set runtimepath^=~/.vim/bundle/ctrlp.vim

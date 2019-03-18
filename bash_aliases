@@ -9,6 +9,7 @@ alias ..="cd .."
 # bashrc & vimrc
 alias pr="vim ~/.bash_aliases"
 alias rl="source ~/.bash_aliases"
+alias c='clear'
 
 # Git
 alias g="git"
